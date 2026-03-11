@@ -1,0 +1,50 @@
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("Bubbaloo/bg.jpg");
+    opacity: 0.4;
+    z-index: -1;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* keeps proportions and crops overflow */
+    margin: calc(10% / 6);
+}
+nav {
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 2.5em; 
+    margin: 0 auto; 
+    text-transform: uppercase;
+    border-bottom: 1px solid #f1f1f1;
+    width: 75%;
+    padding: 1.5em 0;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 45%;
+    }
+    body {
+        background-color: rgb(255, 0, 140);
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 90%;
+    }
+    body {
+        background: url("Bubbaloo/bg.jpg");
+    }
+}
