@@ -2,7 +2,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("Bubbaloo/bg.jpg");
+    background: url("bg.jpg");
     opacity: 0.4;
     z-index: -1;
 }
@@ -45,6 +45,6 @@ nav {
         width: 90%;
     }
     body {
-        background: url("Bubbaloo/bg.jpg");
+        background: url("bg.jpg");
     }
 }
